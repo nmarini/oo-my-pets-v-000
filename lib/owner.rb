@@ -58,5 +58,12 @@ attr_reader :species
     @pets.clear
   end
 
+  def list_pets 
+    fish = @pets[:fish].size
+    dogs = @pets[:dogs].size
+    cats = @pets[:cats].size
+    "I have #{fish} fish, #{dogs} dog(s), and #{cats} cat(s)."
+  end
+
 
 end
