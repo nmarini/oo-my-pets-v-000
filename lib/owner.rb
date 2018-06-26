@@ -9,4 +9,8 @@ attr_reader :name
     @@all << self
   end
 
+  def self.all 
+    @@all 
+  end
+
 end
