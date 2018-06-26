@@ -26,4 +26,10 @@ attr_reader :species
     "I am a #{@species}."
   end
 
+  def buy_fish(name)
+    new_pet = Fish.new(name)
+    @pets[fishes] << new_pet
+  end
+    
+
 end
