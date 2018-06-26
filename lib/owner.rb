@@ -53,5 +53,10 @@ attr_reader :species
     @pets[:fishes].map{|fish| fish.mood = "happy" }
   end
 
+  def sell_pets
+    @pets.map{|type, pet| type[pet].map{|pet| pet.mood = "nervous"}}
+    @pets.clear
+  end
+
 
 end
