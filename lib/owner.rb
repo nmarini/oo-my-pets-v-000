@@ -54,7 +54,7 @@ attr_reader :species
   end
 
   def sell_pets
-    @pets.map{|type, pet| type[pet].map{|pet| pet.mood = "nervous"}}
+    @pets.map{|type, pet| pets.map{|pet| pet.mood = "nervous"}}
     @pets.clear
   end
 
