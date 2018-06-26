@@ -27,18 +27,15 @@ attr_reader :species
   end
 
   def buy_fish(name)
-    new_pet = Fish.new(name)
-    @pets[:fishes] << new_pet
+    @pets[:fishes] << Fish.new(name)
   end
 
   def buy_cat(name)
-    new_pet = Cat.new(name)
-    @pets[:cats] << new_pet
+     @pets[:cats] << Cat.new(name)
   end
 
   def buy_dog(name)
-    new_pet = Dog.new(name)
-    @pets[:dogs] << new_pet
+    @pets[:dogs] << Dog.new(name)
   end
 
   def walk_dogs
