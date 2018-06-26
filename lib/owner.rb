@@ -13,6 +13,10 @@ attr_reader :species
     @@all
   end
 
+  def say_species
+    puts "I am a #{@species}."
+  end
+
   def self.count
     @@all.size
   end
