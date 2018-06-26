@@ -41,5 +41,9 @@ attr_reader :species
     @pets[:dogs] << new_pet
   end
 
+  def walk_dogs
+    @pets[:dogs].map{|dog| @mood = "happy"}
+  end
+
 
 end
