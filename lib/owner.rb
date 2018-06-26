@@ -13,4 +13,10 @@ attr_reader :name
     @@all
   end
 
+  def self.count 
+    @@all.size
+  end
+
+  
+
 end
