@@ -42,7 +42,7 @@ attr_reader :species
   end
 
   def walk_dogs
-    @pets[:dogs].map{|dog| @mood = "happy"}
+    @pets[:dogs].map{|dog| dog.mood = "happy" }
   end
 
 
